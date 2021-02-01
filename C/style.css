@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    
+}/*
+header{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    box-shadow:inset 0 0 0 50vw rgba(255,255,255,0.4)   
+}
+img{
+	width:100%;
+}*/
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content:"." ;
+    visibility:hidden; 
+    display:block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.main-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    position: fixed;
+    float: right;
+   padding-top: 2%;
+    padding-left: 70%;
+    right: 0;
+    background-color:  transparent;
+    background-image: linear-gradient(to left,rgb(235, 179, 127),rgba(219, 188, 188, 0));
+    padding-bottom: 20px;
+}
+
+   
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.main-nav li a{
+    padding:  5px 0px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    float: right;
+    height: auto;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #EE6C4D;
+}
+
+.main-content{
+    
+    width: 1100px;
+    position: relative;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 2px;
+}
+
+
+h1{
+    color:#FFFFFF;
+    font-size: 240%; /*20*240/100=42px*/
+    font-weight: lighter;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 1s,border 0.5s,color 2s;
+}
+
+.btn-full{
+    background-color: #EE6C4D;
+    color: #FFFFFF;
+    margin-right: 15px;
+}
+.btn-full:hover{
+    background-color: #FFFFFF;
+    color: #EE6C4D;
+}
+.btn-nav{
+    background-color: #FFFFFF;
+    color: #EE6C4D;
+    transition-duration: 2s;
+}
+.btn-nav:hover{
+    background-color: #EE6C4D;
+    color: #FFFFFF;
+    transition-duration: 2s;
+}
+.mobile-icon{
+    display: none;
+}
+.title{
+    color: #EE6C4D; 
+    font-size: 200%;
+    letter-spacing: 5px;
+}
+
+#abt{
+    text-align: center; 
+    height: 150px;
+    padding-top: 0;
+    margin-top: 0%;
+    font-weight: 500;
+    color: #EE6C4D  ;
+}
+
+.lead{
+    padding-top: 2%;
+    margin-top: -20%;
+    background: transparent; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(92, 92, 92);
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 200%;
+    
+}
+#services{
+    text-align: center; 
+    height: 150px;
+    padding-top: 0;
+    margin-top: 0%;
+    font-weight: 500;
+    color: #EE6C4D;
+    margin-bottom: -2%;
+}
+
+/* responsive*/
+
+@media only screen and (max-width:1100px){
+    .main-content{
+        width:100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width:998px){
+     h1{ font-size: 200%; }
+}
+@media only screen and (max-width:668px){
+    
+    h1{ font-size: 180%; }
+    .title{
+        margin-top: 25% ;font-size:120% ;}
+    
+        #abt{
+            font-size: 180%;
+            margin-bottom: -40%;
+            padding-bottom: 0px;
+        }
+
+    .lead{ height:180%;text-align: justify; letter-spacing: 0px; word-spacing: 1px;margin-top:0px; margin-left: 8%; margin-bottom: 2%;  font-size:2%; width: 70vh;}
+    .main-nav{display: none;}
+
+   
+    .mobile-icon {
+        display: inline-block;
+        color: rgb(10, 10, 10);
+        
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav{
+        float: left;
+    }
+
+    .main-nav li{
+        
+        display: block;
+        margin-top: 10px;
+
+    }
+    #services{
+        text-align: center;
+        margin-bottom: -5%;
+        font-size: 180%;
+    }
+    
+}
+
+@media only screen and (max-width:468px){
+  .btn-full{margin-bottom: 20px;}
+   
+   .title{font-size:150% ;}
+   
+}
+footer{
+    margin-bottom: Opx;
+    width: 100%;
+    height: 100px;
+    margin-top: 2%;
+    background-color: black;
+    font-size: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
